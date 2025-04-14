@@ -14,16 +14,16 @@ fn main() {
 
     // Example usage without needing to specify the full module path
     let rectangle = Rectangle { width: 5.0, height: 10.0 };
-    println!("Rectangle width: {}", rectangle.width());
-    println!("Rectangle area: {}", rectangle.area());
-    println!("Rectangle perimeter: {}", rectangle.perimeter());
+    println!("Rectangle width: {0}", rectangle.width());
+    println!("Rectangle area: {0}", rectangle.area());
+    println!("Rectangle perimeter: {0}", rectangle.perimeter());
 
     // Example usage with the full module path, useful in cases of library naming overlap
     // (e.g. COOLColors::shape::Rectangle)
     let rectangle = shape::Rectangle { width: 5.0, height: 10.0 };
-    println!("Rectangle width: {}", rectangle.width);
-    println!("Rectangle area: {}", rectangle.area());
-    println!("Rectangle perimeter: {}", rectangle.perimeter());
+    println!("Rectangle width: {0}", rectangle.width);
+    println!("Rectangle area: {0}", rectangle.area());
+    println!("Rectangle perimeter: {0}", rectangle.perimeter());
 
     println!("Test {}", rectangle.width());
 
