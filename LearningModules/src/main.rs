@@ -1,17 +1,17 @@
 mod riftgate_network;
 mod utils;
 
-use riftgate_network::{client::data_layer::send_data, server::ports::listen};
-use utils::{helper_function, some_public_function};
+//use riftgate_network::{client::data_layer::send_data, server::ports::listen};
+//use utils::{helper_function, some_public_function};
 
 fn main() {
     println!("Starting main application");
-    some_public_function();
-    helper_function();
-    listen();
-
+    
+    utils::some_public_function();
+    utils::helper_function();
+    riftgate_network::server::ports::listen();
     riftgate_network::connect();
-    send_data();
+    riftgate_network::client::data_layer::send_data();
 
     println!("Finished main application");
 }
