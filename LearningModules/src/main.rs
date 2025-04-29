@@ -11,6 +11,7 @@ fn main() {
 
     utils::some_public_function();
     utils::helper_function();
+ 
     server::ports::listen();
     riftgate_network::connect();
     riftgate_network::client::data_layer::send_data();

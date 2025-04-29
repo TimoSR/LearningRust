@@ -13,8 +13,10 @@ struct CPPLikePoint {
 }
 
 impl CPPLikePoint {
-    fn new() -> Box<Self> {
-        Box::new(self);
+    fn new(x) -> Box<CPPLikePoint> {
+        return (CPPLikePoint{
+
+        });
     }
 }
 
