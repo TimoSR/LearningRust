@@ -26,9 +26,7 @@ pub fn run() {
 
     // let window = WindowBuilder::new().build(&event_loop).expect("Windowbuilder failed");
 
-    const TESTCLOSURE: fn (a: i32) -> i32 = |a: i32| -> i32 {
-        return a + 2;
-    };
+    
 
 
 

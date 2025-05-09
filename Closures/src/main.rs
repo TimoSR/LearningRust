@@ -14,7 +14,6 @@ where
 }
 
 fn main() {
-
     // Evaluated at compile time
     const ADD_TWO: fn (i32) -> i32 = |a: i32| -> i32 {
         return a + 2;
@@ -31,7 +30,7 @@ fn main() {
     }
 
     // a good example how to pass a function as input
-    let result = do_more_math(|input: i32| {
+    let result = do_more_math(move |input: i32| {
         return input + 100;
     });
 

@@ -3,6 +3,22 @@ use crate::stuff::article::test::{Article, Point, Summary, Calculations};
 
 fn main() {
 
+    let val1 = 100;
+    let val2 = val1.clone();
+    let ref1 = &val1;
+    let ref2 = &val2;
+
+    println!("val1={}, val2={}", val1, val2);
+    println!("ref1={:p}, ref2={:p}", ref1, ref2);
+    let val3 = val1;
+    println!("val1={}, val2={}, val3={}", val1, val2, val3+1);
+
+    let boxed_val1 = Box::new(1);
+    let boxed_val2 = boxed_val1;
+    
+    //Displaying how the borrower confronts us
+    println!("boxed_val1={}, boxed_val2={}", *boxed_val1, *boxed_val2);
+
     // Sometimes we may want just simple structs as data holders
     // But in most cases we want to farce  
 
