@@ -1,7 +1,9 @@
-use std::collections::HashMap;
+use std::{collections::HashMap, mem};
 
 fn main() {
     
+    // https://doc.rust-lang.org/std/collections/
+
     let mut scores = HashMap::new();
 
     scores.insert("Selma", 999);
