@@ -30,6 +30,7 @@ fn main() {
     }
 
     // a good example how to pass a function as input
+    // and captures the scoped variable inside do_more_math
     let result = do_more_math(move |input: i32| {
         return input + 100;
     });
